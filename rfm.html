@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">        
+            <h1>QuickFit</h1>
+            <ul>
+                <li>Kontakt</li>
+                <li>Kontakt2</li>
+                <li>Kontakt3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="infobox">
+        <h2>RFM Kalkulator</h2>
+        <p>oblicz rfm to sie dowiesz</p>
+        <p>czegoś na pewno</p>
+    </div>
+
+    <div class="calccontainer">
+        <div class="left">
+            <img src="/gfx/woman.jpg"/>
+        </div>
+        <div class="right">
+            <h2>RFM Calculator</h2>
+            <label for="gender">Select Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter height" required><br><br>
+            <label for="waist">Waist Circumference (cm):</label>
+            <input type="number" id="waist" placeholder="Enter waist circumference" required><br><br>
+            <button onclick="calculateRFM()">Calculate RFM</button>
+            <div id="result"></div>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
