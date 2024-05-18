@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">        
+            <h1><a href="index.html">QuickFit</a></h1>
+            <ul>
+                <li>Kontakt</li>
+                <li>Kontakt2</li>
+                <li>Kontakt3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="infobox">
+        <h2>BMI Kalkulator</h2>
+        <p>oblicz bmi to sie dowiesz</p>
+        <p>czegoś na pewno</p>
+    </div>
+
+    <div class="calccontainer">
+        <div class="left">
+
+        </div>
+        <div class="right">
+            <div class="formcontainer">
+                <div>
+                    <label for="height">Wzrost (cm):</label>
+                    <input type="text" id="height" placeholder="Wprowadź swój wzrost" required>
+                </div>
+                <div>
+                    <label for="weight">Waga (kg):</label>
+                    <input type="text" id="weight" placeholder="Wprowadź swoją wagę" required>
+                </div>
+                <button id="submit" onclick="calculateBMI()">Oblicz BMI</button>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>

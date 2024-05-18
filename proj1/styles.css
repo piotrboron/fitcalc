@@ -1,0 +1,192 @@
+/* BASIC */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffd700;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #153448;
+    color:white;
+    height:8vh;
+}
+
+.navbar a {
+    font-size:24px;
+    text-decoration: none;
+    color:white;
+}
+
+/* Container for navbar content */
+.navbar-container {
+    display: flex; /* Display children inline */
+    justify-content: space-between; /* Align items horizontally with space between them */
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.navbar-container h1 {
+    font-size: 24px;
+}
+
+.navbar-container ul {
+    list-style-type: none;
+}
+
+.navbar-container ul li {
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar-container ul li:hover {
+    color: #ffd700;
+}
+
+/* MAINMENU */ 
+
+.menucontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    background-color: #948979;
+    max-width:100%;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+
+.box {
+    background-color: #3C5B6F;
+    border-radius: 25px;
+    padding:5px;
+    height:250px;
+    width:250px;
+    align-content: center;
+    margin-top:50px;
+    margin-bottom: 25px;
+    box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+}
+
+.box:hover {
+    transform: scale(1.1);
+    transition: 0.35s;
+}
+
+.box h2 {
+    text-align: center;
+    color:#fff;
+    font-size: 40px;
+}
+
+/* WIDOK APKI (BMI, BMR calc etc) */
+
+.infobox {
+    background-color: #333;
+}
+
+.infobox h2 {
+    font-weight:bold;
+    text-align: center;
+}
+
+.infobox p {
+    font-weight:normal;
+    text-align: center;
+}
+
+.calccontainer {
+    background-color:white;
+    display:flex;
+}
+
+.formcontainer {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+    font-family: 'Poppins',sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.calccontainer .left img {
+    height:100%;
+    width:100%;
+}
+
+.calccontainer > .left {
+    width:50%;
+}
+
+.calccontainer > .right {
+    background-color: #fff;
+    width:50%;
+    height:auto;
+}
+
+/* BMI | BMR */
+#info {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.calccontainer input, #gender {
+    width:250px;
+    height:40px;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-radius:25px;
+    font-size:16px;
+    color:#333;
+    padding:20px;
+    margin:15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 29px -6px rgba(66, 68, 90, 1);
+}
+
+.calccontainer label {
+    color:#333;
+    font-size: 24px;
+    font-weight: bold;
+    display:block;
+    text-align: center;
+}
+
+.calccontainer select {
+    background:transparent;
+    border:none;
+    outline:none;
+    border-radius:20px;
+    font-size:16px;
+    color:#333;
+    padding:10px;
+    background-color: salmon;
+    box-shadow: 0px 0px 29px -6px rgba(66, 68, 90, 1);
+}
+
+.formcontainer #submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #289df6;
+    border-radius: 15px;
+    width:150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+
